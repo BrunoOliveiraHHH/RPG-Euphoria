@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monstros</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/monsters.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/w3.css">
+    <link rel="shortcut icon" href="assets/img/ico.png" type="image/x-icon">
+</head>
+
+<body class="body" background="assets/img/back.jpg" style="background-attachment: fixed;">
+
+    <!-- Nav Bar-->
+    <div class="header">
+        <div class="menu">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home Page</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Euphoria</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="euphoria.html">Euphoria</a>
+                        <a class="dropdown-item" href="locales/shurima.html">Império de Shurima</a>
+                        <a class="dropdown-item" href="locales/avalon.html">Reino de Avalon</a>
+                        <a class="dropdown-item" href="locales/maia.html">Império Maia</a>
+                        <a class="dropdown-item" href="locales/roman.html">Império Romano</a>
+                        <a class="dropdown-item" href="locales/whales.html">Arquipélago Whales</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Estatisticas</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="statistics/ambience.html">Monstros por Ambiente</a>
+                        <a class="dropdown-item" href="statistics/level.html">Nivel por XP</a>
+                        <a class="dropdown-item" href="statistics/aventure.html">XP por dia de Aventura</a>
+                        <a class="dropdown-item" href="statistics/skill.html">Modificador por Valor de Habilidade</a>
+                        <a class="dropdown-item" href="statistics/difficulty.html">Dificuldade por XP</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="monsters.html">Monstros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="spells.html">Magias</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Main Body-->
+    <div class="content-center">
+        <p>Letra Inicial do Monstro:</p>
+        <div class="choice">
+            <select id="choice" class="custom-select custom-select-sm">
+            <option value="0">Letra</option>
+            <option value="1">A</option>
+            <option value="2">B</option>
+            <option value="3">C</option>
+            <option value="4">D</option>
+            <option value="5">E</option>
+            <option value="6">F</option>
+            <option value="7">G</option>
+            <option value="8">H</option>
+            <option value="9">I</option>
+            <option value="10">J</option>
+            <option value="11">K</option>
+            <option value="12">L</option>
+            <option value="13">M</option>
+            <option value="14">N</option>
+            <option value="15">O</option>
+            <option value="16">P</option>
+            <option value="17">Q</option>
+            <option value="18">R</option>
+            <option value="19">S</option>
+            <option value="20">T</option>
+            <option value="21">U</option>
+            <option value="22">V</option>
+            <option value="23">W</option>
+            <option value="24">X</option>
+            <option value="25">Y</option>
+            <option value="26">Z</option>
+            <option value="27">Apendice A</option>
+            <option value="28">Apendice B</option>
+        </select>
+            <button type="button" id="btn-submit" class="btn btn-secondary">Enviar</button>
+        </div>
+    </div>
+    <div id="img">
+
+    </div>
+    <!-- Script Section-->
+    <script src="assets/js/monstersImg.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+
+</html>

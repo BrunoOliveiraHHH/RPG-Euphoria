@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Magias</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/spells.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/w3.css">
+    <link rel="shortcut icon" href="assets/img/ico.png" type="image/x-icon">
+</head>
+
+<body class="body" background="assets/img/back.jpg" style="background-attachment: fixed;">
+
+    <!-- Nav Bar-->
+    <div class="header">
+        <div class="menu">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home Page</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Euphoria</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="euphoria.html">Euphoria</a>
+                        <a class="dropdown-item" href="locales/shurima.html">Império de Shurima</a>
+                        <a class="dropdown-item" href="locales/avalon.html">Reino de Avalon</a>
+                        <a class="dropdown-item" href="locales/maia.html">Império Maia</a>
+                        <a class="dropdown-item" href="locales/roman.html">Império Romano</a>
+                        <a class="dropdown-item" href="locales/whales.html">Arquipélago Whales</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Estatisticas</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="statistics/ambience.html">Monstros por Ambiente</a>
+                        <a class="dropdown-item" href="statistics/level.html">Nivel por XP</a>
+                        <a class="dropdown-item" href="statistics/aventure.html">XP por dia de Aventura</a>
+                        <a class="dropdown-item" href="statistics/skill.html">Modificador por Valor de Habilidade</a>
+                        <a class="dropdown-item" href="statistics/difficulty.html">Dificuldade por XP</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="monsters.html">Monstros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="spells.html">Magias</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Main Body-->
+    <div class="content-center">
+        <p>Nivel da Magia:</p>
+        <div class="choice">
+            <select id="choice" class="custom-select custom-select-sm">
+            <option selected value="10">Escolha uma opção</option>
+            <option value="0">Truque</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+            <button type="button" id="btn-submit" class="btn btn-secondary">Enviar</button>
+        </div>
+    </div>
+    <div id="img">
+
+    </div>
+    <!-- Script Section-->
+    <script src="assets/js/spellsImg.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+.card {
+    max-width: 750px;
+    width: 100%;
+    margin-top: 10px;
+    margin: 25px;
+    border: 5px solid #000;
+    background-color: #cccccc;
+}
+
+.card table thead {
+    font-weight: bold;
+}
+
+.card .lvl {
+    width: 80%;
+    border: 2px solid #000;
+    padding: 5px;
+    border-right: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card .monster {
+    width: 80%;
+    border: 2px solid #000;
+    padding: 5px;
+    border-left: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card-title {
+    font-weight: bold;
+    padding: 5px;
+    padding-bottom: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.choice {
+    width: 100px;
+    margin: 1px;
+}
+
+.content-center {
+    background-color: #FFF;
+    width: 200px;
+    padding: 5px;
+    margin: 25px;
+    height: 100px;
+    border: #000 solid 5px;
+}

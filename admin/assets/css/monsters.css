@@ -1,0 +1,36 @@
+.card-mon {
+    width: 375px;
+    height: 525px;
+    margin: 10px;
+    border: 10px solid #000;
+    background-color: #FFF;
+    padding: 10px;
+    display: inline-block;
+}
+
+.choice {
+    width: 100px;
+    margin: 1px;
+}
+
+.content-center {
+    background-color: #FFF;
+    width: 200px;
+    padding: 5px;
+    margin: 25px;
+    height: 100px;
+    border: #000 solid 5px;
+}
+
+.monster-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #FFF;
+    border: #000 5px solid;
+    width: 150px;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 42%;
+    text-align: center;
+}
