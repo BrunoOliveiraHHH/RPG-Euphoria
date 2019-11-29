@@ -18,6 +18,11 @@
 
 .inputsCRUD {
     background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
 }
 
 .maintables .table {
@@ -31,15 +36,24 @@
     max-height: 24px;
 }
 
+.imgConfirm {
+    max-width: 24px;
+    max-height: 24px;
+}
+
 .maintables .imgDelete {
     max-width: 24px;
     max-height: 24px;
-    float: left;
 }
 
 .maintables .imgEdit {
     max-width: 24px;
     max-height: 24px;
+    float: left;
+}
+
+.flexbox {
+    display: inline-flex;
 }
 
 .btn-submit-reset {
@@ -54,7 +68,7 @@
 }
 
 .table {
-    max-width: 1000px;
+    max-width: 2000px;
     width: 100%;
     border: none;
 }
@@ -66,8 +80,18 @@
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.table .header {
+.table .tab-header {
     background-color: rgba(255, 255, 255, 0.5);
     border: none;
     font-weight: bold;
+    margin-left: 100px;
+}
+
+.none {
+    width: 0%;
+}
+
+.btn-new {
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.5);
 }

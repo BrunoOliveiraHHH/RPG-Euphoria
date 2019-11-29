@@ -68,8 +68,7 @@ function addLinha() {
             <td id="hp${cont}">${hpCRUDvalue}</td>
             <td id="ca${cont}">${caCRUDvalue}</td>
             <td id="ini${cont}">${iniCRUDvalue}</td>
-            <td><button type="button" onclick="funcaoCriaEdit('${cont}');" class="btn-submit-reset" id="btn-edit"><img src="assets/img/edit.png" class="imgEdit"></button></td>
-            <td><button type="button" onclick="excluirDados(this)" class="btn-submit-reset" id="btn-delete"><img src="assets/img/delete.png" class="imgDelete"></button></td>
+            <td class="flexbox"><button type="button" onclick="funcaoCriaEdit('${cont}');" class="btn-submit-reset" id="btn-edit"><img src="assets/img/edit.png" class="imgEdit"></button><button type="button" onclick="excluirDados(this)" class="btn-submit-reset" id="btn-delete"><img src="assets/img/delete.png" class="imgDelete"></button></td>
             `;
 
             item.innerHTML = template;
@@ -217,8 +216,7 @@ function editarDados(trId) {
             <td id="hp${trId}">${hpCRUDvalue}</td>
             <td id="ca${trId}">${caCRUDvalue}</td>
             <td id="ini${trId}">${iniCRUDvalue}</td>
-            <td><button type="button" onclick="funcaoCriaEdit('${trId}');" class="btn-submit-reset" id="btn-edit"><img src="assets/img/edit.png" class="imgEdit"></button></td>
-            <td><button type="button" onclick="excluirDados(this)" class="btn-submit-reset" id="btn-delete"><img src="assets/img/delete.png" class="imgDelete"></button></td>
+            <td class="flexbox"><button type="button" onclick="funcaoCriaEdit('${trId}');" class="btn-submit-reset" id="btn-edit"><img src="assets/img/edit.png" class="imgEdit"></button><button type="button" onclick="excluirDados(this)" class="btn-submit-reset" id="btn-delete"><img src="assets/img/delete.png" class="imgDelete"></button></td>
             `;
 
         item.innerHTML = template;
@@ -228,7 +226,7 @@ function editarDados(trId) {
     }
 }
 
-document.querySelector('#btn-submit').addEventListener('click', e => {
+function dataLinha() {
 
     data.push({
         id: data.length + 1,
@@ -244,4 +242,4 @@ document.querySelector('#btn-submit').addEventListener('click', e => {
 
     data.length = 0;
 
-});
+};
