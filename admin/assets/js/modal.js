@@ -1,14 +1,9 @@
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("modalClose")[0];
 
 btn.onclick = function() {
     modal.style.display = "block";
     modal.innerHTML = template;
-}
-
-span.onclick = function() {
-    modal.style.display = "none";
 }
 
 window.onclick = function(event) {
