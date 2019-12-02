@@ -24,7 +24,7 @@ var template = `<form method="POST" class="inputsCRUD">
 <input type="text" class="form-control form-control-sm inputCRUD" id="hpCRUD">
 <input type="text" id="caCRUD" class="form-control form-control-sm inputCRUD">
 <input type="text" class="form-control form-control-sm inputCRUD" id="iniCRUD">
-<button type="button" id="btn-submit" onclick="dataLinha();" class="btn-submit-reset">
+<button type="button" id="btn-submit" onclick="dataLinha();" class="btn-submit-reset" style="width: 24px;height: 24px;">
     <img src="assets/img/confirm.png" class="imgConfirm" alt="Confirmar">
 </button>
 </form>`;
