@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Monstros por Ambiente</title>
+    <title>Tabelas de Modificadores</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/w3.css">
-    <link rel="stylesheet" href="../assets/css/statistics.css">
+    <link rel="stylesheet" href="../assets/css/value.css">
     <link rel="shortcut icon" href="../assets/img/ico.png" type="image/x-icon">
 </head>
 
@@ -37,16 +37,8 @@
                     <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#">Estatisticas</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="../statistics/ambience.html">Monstros por Ambiente</a>
-                        <a class="dropdown-item" href="../statistics/level.html">Tableas de Experiência</a>
-                        <a class="dropdown-item" href="../statistics/skill.html">Modificador por Valor de Habilidade</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Tesouros</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="../treasure/gems.html">Gemas</a>
-                        <a class="dropdown-item" href="../treasure/value.html">Objetos de Valor</a>
-                        <a class="dropdown-item" href="../treasure/items.html">Itens Mágicos</a>
+                        <a class="dropdown-item" href="../statistics/level.html">Tabelas de Experiência</a>
+                        <a class="dropdown-item" href="../statistics/skill.html">Tabelas de Modificadores</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -63,21 +55,13 @@
     </div>
     <!-- Main Body-->
     <div class="content-center">
-        <p>Tipo de Monstro:</p>
+        <p>Tabelas de Modificadores:</p>
         <div class="choice">
             <select id="choice" class="custom-select custom-select-sm">
-            <option value="0">Tipo</option>
-            <option value="1">Ártico</option>
-            <option value="2">Colina</option>
-            <option value="3">Costa</option>
-            <option value="4">Deserto</option>
-            <option value="5">Floresta</option>
-            <option value="6">Montanha</option>
-            <option value="7">Pântano</option>
-            <option value="8">Planície</option>
-            <option value="9">Subaquático</option>
-            <option value="10">Subterrâneo</option>
-            <option value="11">Urbano</option>
+            <option value="0">Tipo de Tabela</option>
+            <option value="1">Modificador por ND</option>
+            <option value="2">Modificador por Valor de Habilidade</option>
+            <option value="3">Modificador por Nivel</option>
         </select>
             <button type="button" id="btn-submit" class="btn btn-secondary">Enviar</button>
         </div>
@@ -86,7 +70,7 @@
 
     </div>
     <!-- Script Section-->
-    <script src="../assets/js/monstersTab.js"></script>
+    <script src="../assets/js/value.js"></script>
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/popper.js"></script>
     <script src="../assets/js/bootstrap.js"></script>
