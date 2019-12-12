@@ -9,11 +9,15 @@ document.querySelector('#btn-submit').addEventListener('click', e => {
     if (choiceValue == 0) {
         clear();
     } else if (choiceValue == 1) {
-        modND();
+        objt25Po();
     } else if (choiceValue == 2) {
-        modVH();
+        objt250Po();
     } else if (choiceValue == 3) {
-        modLvl();
+        objt750Po();
+    } else if (choiceValue == 4) {
+        objt2500Po();
+    } else if (choiceValue == 5) {
+        objt7500Po();
     }
 
 });
@@ -22,165 +26,45 @@ function clear() {
     tab.innerHTML = '';
 }
 
-function modND() {
-    var template = `<div class="card lf" id="card">
-    <div class="card-title">Modificador por ND</div>
+function objt25Po() {
+    var template = `<div class="card" id="card">
+    <div class="card-title">Objeto de Arte de 25 Po</div>
     <table>
         <thead>
             <tr>
-                <td class="name">ND</td>
-                <td class="value">Modificador de BP</td>
+                <td class="name">Nome</td>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="name">0</td>
-                <td class="value">+2</td>
+                <td class="name">Jarro de prata</td>
             </tr>
             <tr>
-                <td class="name">1/8</td>
-                <td class="value">+2</td>
+                <td class="name">Estatueta esculpida em osso</td>
             </tr>
             <tr>
-                <td class="name">1/4</td>
-                <td class="value">+2</td>
+                <td class="name">Bracelete de ouro pequeno</td>
             </tr>
             <tr>
-                <td class="name">1/2</td>
-                <td class="value">+2</td>
+                <td class="name">Vestimenta de tecido dourado</td>
             </tr>
             <tr>
-                <td class="name">1</td>
-                <td class="value">+2</td>
+                <td class="name">Máscara de veludo negra costurada com fios de prata</td>
             </tr>
             <tr>
-                <td class="name">2</td>
-                <td class="value">+2</td>
+                <td class="name">Cálice de cobre com filigrana prateada</td>
             </tr>
             <tr>
-                <td class="name">3</td>
-                <td class="value">+2</td>
+                <td class="name">Par de dados de osso com gravuras</td>
             </tr>
             <tr>
-                <td class="name">4</td>
-                <td class="value">+2</td>
+                <td class="name">Pequeno espelho numa moldura de madeira pintada</td>
             </tr>
             <tr>
-                <td class="name">5</td>
-                <td class="value">+3</td>
+                <td class="name">Lenço de seda bordado</td>
             </tr>
             <tr>
-                <td class="name">6</td>
-                <td class="value">+3</td>
-            </tr>
-            <tr>
-                <td class="name">7</td>
-                <td class="value">+3</td>
-            </tr>
-            <tr>
-                <td class="name">8</td>
-                <td class="value">+3</td>
-            </tr>
-            <tr>
-                <td class="name">9</td>
-                <td class="value">+4</td>
-            </tr>
-            <tr>
-                <td class="name">10</td>
-                <td class="value">+4</td>
-            </tr>
-            <tr>
-                <td class="name">11</td>
-                <td class="value">+4</td>
-            </tr>
-            <tr>
-                <td class="name">12</td>
-                <td class="value">+4</td>
-            </tr>
-            <tr>
-                <td class="name">13</td>
-                <td class="value">+5</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<div class="card rg" id="card">
-    <div class="card-title">Modificador por ND</div>
-    <table>
-        <thead>
-            <tr>
-                <td class="name">ND</td>
-                <td class="value">Modificador de BP</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="name">14</td>
-                <td class="value">+5</td>
-            </tr>
-            <tr>
-                <td class="name">15</td>
-                <td class="value">+5</td>
-            </tr>
-            <tr>
-                <td class="name">16</td>
-                <td class="value">+5</td>
-            </tr>
-            <tr>
-                <td class="name">17</td>
-                <td class="value">+6</td>
-            </tr>
-            <tr>
-                <td class="name">18</td>
-                <td class="value">+6</td>
-            </tr>
-            <tr>
-                <td class="name">19</td>
-                <td class="value">+6</td>
-            </tr>
-            <tr>
-                <td class="name">20</td>
-                <td class="value">+6</td>
-            </tr>
-            <tr>
-                <td class="name">21</td>
-                <td class="value">+7</td>
-            </tr>
-            <tr>
-                <td class="name">22</td>
-                <td class="value">+7</td>
-            </tr>
-            <tr>
-                <td class="name">23</td>
-                <td class="value">+7</td>
-            </tr>
-            <tr>
-                <td class="name">24</td>
-                <td class="value">+7</td>
-            </tr>
-            <tr>
-                <td class="name">25</td>
-                <td class="value">+8</td>
-            </tr>
-            <tr>
-                <td class="name">26</td>
-                <td class="value">+8</td>
-            </tr>
-            <tr>
-                <td class="name">27</td>
-                <td class="value">+8</td>
-            </tr>
-            <tr>
-                <td class="name">28</td>
-                <td class="value">+8</td>
-            </tr>
-            <tr>
-                <td class="name">29</td>
-                <td class="value">+9</td>
-            </tr>
-            <tr>
-                <td class="name">30</td>
-                <td class="value">+9</td>
+                <td class="name">Broche de ouro com um retrato pintado dentro</td>
             </tr>
         </tbody>
     </table>
@@ -188,231 +72,177 @@ function modND() {
     tab.innerHTML = template;
 };
 
-function modVH() {
+function objt250Po() {
     var template = `<div class="card" id="card">
-    <div class="card-title">Modificador por Valor de Habilidade</div>
+    <div class="card-title">Objeto de Arte de 250 Po</div>
     <table>
         <thead>
             <tr>
-                <td class="name">Valor de Habilidade</td>
-                <td class="value">Modificador da Habilidade</td>
+                <td class="name">Nome</td>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="name">1</td>
-                <td class="value">-5</td>
+                <td class="name">Anel de ouro cravejado com pedras de sangue</td>
             </tr>
             <tr>
-                <td class="name">2-3</td>
-                <td class="value">-4</td>
+                <td class="name">Estatueta esculpida em marfim</td>
             </tr>
             <tr>
-                <td class="name">4-5</td>
-                <td class="value">-3</td>
+                <td class="name">Bracelete de ouro largo</td>
             </tr>
             <tr>
-                <td class="name">6-7</td>
-                <td class="value">-2</td>
+                <td class="name">Gargantilha de prata com um pingente de pedra preciosa</td>
             </tr>
             <tr>
-                <td class="name">8-9</td>
-                <td class="value">-1</td>
+                <td class="name">Coroa de bronze</td>
             </tr>
             <tr>
-                <td class="name">10-11</td>
-                <td class="value">0</td>
+                <td class="name">Robe de seda com adornos de ouro</td>
             </tr>
             <tr>
-                <td class="name">12-13</td>
-                <td class="value">+1</td>
+                <td class="name">Grande tapeçaria elegante</td>
             </tr>
             <tr>
-                <td class="name">14-15</td>
-                <td class="value">+2</td>
+                <td class="name">Caneca de bronze com jades incrustadas</td>
             </tr>
             <tr>
-                <td class="name">16-17</td>
-                <td class="value">+3</td>
+                <td class="name">Caixa de miniaturas de animais em turquesa</td>
             </tr>
             <tr>
-                <td class="name">18-19</td>
-                <td class="value">+4</td>
-            </tr>
-            <tr>
-                <td class="name">20-21</td>
-                <td class="value">+5</td>
-            </tr>
-            <tr>
-                <td class="name">22-23</td>
-                <td class="value">+6</td>
-            </tr>
-            <tr>
-                <td class="name">24-25</td>
-                <td class="value">+7</td>
-            </tr>
-            <tr>
-                <td class="name">26-27</td>
-                <td class="value">+8</td>
-            </tr>
-            <tr>
-                <td class="name">28-29</td>
-                <td class="value">+9</td>
-            </tr>
-            <tr>
-                <td class="name">30</td>
-                <td class="value">+10</td>
+                <td class="name">Gaiola de pássaro de ouro com filigrana de electro</td>
             </tr>
         </tbody>
     </table>
-</div>
-`;
+</div>`;
     tab.innerHTML = template;
 };
 
-function modLvl() {
-    var template = `<div class="card lf" id="card">
-    <div class="card-title">Modificador por Nivel</div>
+function objt750Po() {
+    var template = `<div class="card" id="card">
+    <div class="card-title">Objeto de Arte de 750 Po</div>
     <table>
         <thead>
             <tr>
-                <td class="name">Nível</td>
-                <td class="value">Modificador de BP</td>
+                <td class="name">Nome</td>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="name">1</td>
-                <td class="value">+2</td>
+                <td class="name">Cálice de prata cravejado com pedras da lua</td>
             </tr>
             <tr>
-                <td class="name">2</td>
-                <td class="value">+2</td>
+                <td class="name">Espada longa de lâmina prateada com conjunto de jatos no cabo</td>
             </tr>
             <tr>
-                <td class="name">3</td>
-                <td class="value">+2</td>
+                <td class="name">Harpa de madeira exótica com marfim incrustado e gemas de zircónio</td>
             </tr>
             <tr>
-                <td class="name">4</td>
-                <td class="value">+2</td>
+                <td class="name">Pequeno ídolo de ouro</td>
             </tr>
             <tr>
-                <td class="name">5</td>
-                <td class="value">+3</td>
+                <td class="name">Pente de ouro em formato de dragão cravejada com granadas vermelhas nos olhos</td>
             </tr>
             <tr>
-                <td class="name">6</td>
-                <td class="value">+3</td>
+                <td class="name">Rolha de garrafa gravada com folhas de ouro e cravejada com ametistas</td>
             </tr>
             <tr>
-                <td class="name">7</td>
-                <td class="value">+3</td>
+                <td class="name">Adaga de electro cerimonial com uma pérola negra no pomo</td>
             </tr>
             <tr>
-                <td class="name">8</td>
-                <td class="value">+3</td>
+                <td class="name">Broche de prata e ouro</td>
             </tr>
             <tr>
-                <td class="name">9</td>
-                <td class="value">+4</td>
+                <td class="name">Estatueta de obsidiana com detalhes e incrustações de ouro</td>
             </tr>
             <tr>
-                <td class="name">10</td>
-                <td class="value">+4</td>
-            </tr>
-            <tr>
-                <td class="name">11</td>
-                <td class="value">+4</td>
-            </tr>
-            <tr>
-                <td class="name">12</td>
-                <td class="value">+4</td>
-            </tr>
-            <tr>
-                <td class="name">13</td>
-                <td class="value">+5</td>
-            </tr>
-            <tr>
-                <td class="name">14</td>
-                <td class="value">+5</td>
-            </tr>
-            <tr>
-                <td class="name">15</td>
-                <td class="value">+5</td>
+                <td class="name">Máscara de guerra de ouro pintada</td>
             </tr>
         </tbody>
     </table>
-</div>
-<div class="card rg" id="card">
-    <div class="card-title">Modificador por Nivel</div>
+</div>`;
+    tab.innerHTML = template;
+};
+
+function objt2500Po() {
+    var template = `<div class="card" id="card">
+    <div class="card-title">Objeto de Arte de 2500 Po</div>
     <table>
         <thead>
             <tr>
-                <td class="name">Nível</td>
-                <td class="value">Modificador de BP</td>
+                <td class="name">Nome</td>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="name">16</td>
-                <td class="value">+5</td>
+                <td class="name">Corrente de ouro elegante cravejada com uma opala de fogo</td>
             </tr>
             <tr>
-                <td class="name">17</td>
-                <td class="value">+6</td>
+                <td class="name">Antiga pintura obra-prima</td>
             </tr>
             <tr>
-                <td class="name">18</td>
-                <td class="value">+6</td>
+                <td class="name">Manto de seda e veludo bordado com diversas pedras da lua cravejadas</td>
             </tr>
             <tr>
-                <td class="name">19</td>
-                <td class="value">+6</td>
+                <td class="name">Bracelete de platina cravejado com uma safira</td>
             </tr>
             <tr>
-                <td class="name">20</td>
-                <td class="value">+6</td>
+                <td class="name">Luvas bordadas com lascas de joias</td>
             </tr>
             <tr>
-                <td class="name">21</td>
-                <td class="value">+6</td>
+                <td class="name">Peúga cheia de joias</td>
             </tr>
             <tr>
-                <td class="name">22</td>
-                <td class="value">+6</td>
+                <td class="name">Caixa de música de ouro</td>
             </tr>
             <tr>
-                <td class="name">23</td>
-                <td class="value">+6</td>
+                <td class="name">Argola de ouro cravejada com quatro águas-marinhas</td>
             </tr>
             <tr>
-                <td class="name">24</td>
-                <td class="value">+6</td>
+                <td class="name">Tapa-olho com um olho falso cravejado em uma safira azul e uma pedra da lua</td>
             </tr>
             <tr>
-                <td class="name">25</td>
-                <td class="value">+6</td>
+                <td class="name">Um colar de pequenas pérolas rosas</td>
+            </tr>
+        </tbody>
+    </table>
+</div>`;
+    tab.innerHTML = template;
+};
+
+function objt7500Po() {
+    var template = `<div class="card" id="card">
+    <div class="card-title">Objeto de Arte de 7500 Po</div>
+    <table>
+        <thead>
+            <tr>
+                <td class="name">Nome</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="name">Coroa de ouro cheia de joias</td>
             </tr>
             <tr>
-                <td class="name">26</td>
-                <td class="value">+6</td>
+                <td class="name">Anel de platina cheio de joias</td>
             </tr>
             <tr>
-                <td class="name">27</td>
-                <td class="value">+6</td>
+                <td class="name">Pequena estatueta de ouro cravejada com rubis</td>
             </tr>
             <tr>
-                <td class="name">28</td>
-                <td class="value">+6</td>
+                <td class="name">Taça de ouro cravejada com esmeraldas</td>
             </tr>
             <tr>
-                <td class="name">29</td>
-                <td class="value">+6</td>
+                <td class="name">Caixa de joias de ouro com filigrana de platina</td>
             </tr>
             <tr>
-                <td class="name">30</td>
-                <td class="value">+6</td>
+                <td class="name">Sarcófago infantil de ouro pintado</td>
+            </tr>
+            <tr>
+                <td class="name">Jogo de tabuleiro de jade com peças de ouro maciço</td>
+            </tr>
+            <tr>
+                <td class="name">Chifre de marfim adornado com filigrana de ouro</td>
             </tr>
         </tbody>
     </table>
