@@ -1,41 +1,47 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
 .card {
-    max-width: 350px;
+    max-width: 1000px;
     width: 100%;
     margin-top: 10px;
     margin: 25px;
     border: 5px solid #000;
     background-color: #cccccc;
-    float: left;
-}
-
-.rg {
-    margin-left: 0px;
-}
-
-.lf {
-    margin-right: 5px;
 }
 
 .card table thead {
     font-weight: bold;
 }
 
-.card .value {
-    text-align: center;
-    width: 50%;
+.card .name {
+    width: 20%;
     border: 2px solid #000;
+    border-left: none;
     padding: 5px;
     border-right: none;
     font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
-.card .name {
-    text-align: center;
-    width: 50%;
+.card .value {
+    width: 15%;
     border: 2px solid #000;
+    border-right: none;
     padding: 5px;
-    border-left: none;
     font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.card .value2 {
+    width: 60%;
+    border: 2px solid #000;
+    border-right: none;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 .card-title {
@@ -43,19 +49,4 @@
     padding: 5px;
     padding-bottom: 0;
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-.choice {
-    width: 250px;
-    margin: 1px;
-}
-
-.content-center {
-    background-color: #FFF;
-    width: 350px;
-    padding: 5px;
-    margin: 25px;
-    height: 100px;
-    border: #000 solid 5px;
 }
