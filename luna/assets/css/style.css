@@ -1,0 +1,7 @@
+.back {
+    margin: none;
+    padding: none;
+    background-image: url(../img/back-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
