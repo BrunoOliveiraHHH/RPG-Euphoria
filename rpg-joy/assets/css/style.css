@@ -1,0 +1,24 @@
+ .cabecalhoFicha {
+     text-align: center;
+     margin: auto;
+     padding: 0;
+ }
+ 
+ #nomePersonagem {
+     width: 500px;
+     height: auto;
+     margin-bottom: 15px;
+     margin-top: 15px;
+ }
+ 
+ .campos {
+     width: 250px;
+     height: auto;
+     margin-top: 15px;
+ }
+ 
+ .tituloCampos {
+     margin: auto;
+     padding: 10px;
+     font-family: 'Times New Roman', Times, serif;
+ }

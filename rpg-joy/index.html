@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="tituloCampos cabecalhoFicha">Nome do Personagem: <input class="campos" type="text" name="nomePersonagem" id="nomePersonagem"></div>
+    <table class="cabecalhoFicha">
+        <tr>
+            <td>
+                <div class="tituloCampos">Classe & Nível: <input class="campos" type="text" placeholder="Escreva apenas o nome da classe" name="classeEnivel" id="classeEnivel"></div>
+            </td>
+            <td>
+                <div class="tituloCampos">Antecedentes: <input class="campos" type="text" name="antecedente" id="antecedente">
+                </div>
+            </td>
+            <td>
+                <div class="tituloCampos">Nome do Jogador: <input class="campos" type="text" name="nomeJogador" id="nomeJogador"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="tituloCampos">Raça: <input class="campos" type="text" name="raca" id="raca"></div>
+            </td>
+            <td>
+                <div class="tituloCampos">Tendência: <input class="campos" type="text" name="tendencia" id="tendencia"></div>
+            </td>
+            <td>
+                <div class="tituloCampos">Experiência: <input class="campos" type="text" name="pontosExp" id="pontosExp"></div>
+            </td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="dataLinha()" id="salvarCabecalhoFicha">Salvar Cabecalho</button></td>
+        </tr>
+    </table>
+
+
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+
+</html>
