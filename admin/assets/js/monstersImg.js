@@ -369,12 +369,6 @@ function D() {
     <img src="assets/img/Cards/D/Demon/Quasit Habilidades.png">
 </div>
 <div class="card-mon" style="box-sizing: initial;">
-    <img src="assets/img/Cards/D/Demon/Senhor das Profundezas.png">
-</div>
-<div class="card-mon" style="box-sizing: initial;">
-    <img src="assets/img/Cards/D/Demon/Senhor das profundezas Habilidades.png">
-</div>
-<div class="card-mon" style="box-sizing: initial;">
     <img src="assets/img/Cards/D/Demon/Vrock.png">
 </div>
 <div class="card-mon" style="box-sizing: initial;">
@@ -445,6 +439,12 @@ function D() {
 </div>
 <div class="card-mon" style="box-sizing: initial;">
     <img src="assets/img/Cards/D/Devil/Lêmure.png">
+</div>
+<div class="card-mon" style="box-sizing: initial;">
+    <img src="assets/img/Cards/D/Demon/Senhor das Profundezas.png">
+</div>
+<div class="card-mon" style="box-sizing: initial;">
+    <img src="assets/img/Cards/D/Demon/Senhor das profundezas Habilidades.png">
 </div>
 
 <div class="monster-title" style="box-sizing: initial;">Dinoassauros</div>
