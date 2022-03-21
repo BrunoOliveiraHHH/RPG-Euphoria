@@ -28,10 +28,15 @@
     font-weight: bold;
     background-color: #FFF;
     border: #000 5px solid;
-    width: auto;
-    padding: 5px;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
     margin: 10px;
-    margin-left: 25%;
-    margin-right: 25%;
     text-align: center;
+}
+
+.box-center {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
 }
