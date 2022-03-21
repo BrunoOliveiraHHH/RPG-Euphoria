@@ -25,7 +25,7 @@ function calculaMulti() {
 
         if (monster <= 0) {
             alert('Favor colocar um valor acima de zero no campo "Total de monstros do encontro".');
-            
+
         } else {
             if (monster == 1) {
                 xp = xp;
@@ -78,10 +78,10 @@ function dividXP() {
 
         if (jogadores <= 0) {
             alert('Favor colocar um valor acima de zero no campo "Total de monstros do encontro".');
-            
+
         } else {
             xp = xp / jogadores;
-            
+
             xp = parseInt(xp, 10);
 
             let div = document.getElementById('totalPlayerXpEncounter');
