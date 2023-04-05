@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Magias</title>
+    <title>Calculadoras de XP</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/spells.css">
+    <link rel="stylesheet" href="assets/css/xpCalculator.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/w3.css">
     <link rel="shortcut icon" href="assets/img/ico.png" type="image/x-icon">
@@ -41,42 +41,70 @@
                     <a class="nav-link" href="monsters.html">Monstros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="spells.html">Magias</a>
+                    <a class="nav-link" href="spells.html">Magias</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="traps.html">Armadilhas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="xpcalculator.html">Calculadoras de XP</a>
+                    <a class="nav-link active" href="xpcalculator.html">Calculadoras de XP</a>
                 </li>
             </ul>
         </div>
     </div>
     <!-- Main Body-->
-    <div class="content-center">
-        <p>Nivel da Magia:</p>
-        <div class="choice">
-            <select id="choice" class="custom-select custom-select-sm">
-            <option selected value="10">Escolha uma opção</option>
-            <option value="0">Truque</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-        </select>
-            <button type="button" id="btn-submit" class="btn btn-secondary">Enviar</button>
+    <div class="box-center">
+        <div class="xp-title">
+            Calculo de XP com Multiplicador
+
+            <h5>XP total do encontro:</h5> <input type="number" name="xpTotalEncounter" id="idXpTotalEncounter">
+            <h5>Total de monstros do encontro:</h5> <input type="number" name="monstersTotalEncounter"
+                id="idMonstersTotalEncounter">
+            <br />
+            <br />
+            <input type="button" value="Calcular" onclick="calculaMulti()">
+            <br />
+            <br />
+            <h5>Resultado: <div id="totalXpEncounter"></div>
+            </h5>
+        </div>
+
+        <div class="xp-title">
+            Calculo da divisão de XP do encontro por jogador:
+
+            <h5>XP total com multiplicadores do encontro:</h5> <input type="number" name="xpTotalMultiEncounter"
+                id="idXpTotalMultiEncounter">
+            <h5>Total de jogadores participantes do encontro:</h5> <input type="number" name="jogadoresTotalEncounter"
+                id="idJogadoresTotalEncounter">
+            <br />
+            <br />
+            <input type="button" value="Calcular" onclick="dividXP()">
+            <br />
+            <br />
+            <h5>Resultado: <div id="totalPlayerXpEncounter"></div>
+            </h5>
+        </div>
+
+        <div class="xp-title">
+            Calculo da dificuldade do encontro:
+
+            <h5>XP total com multiplicadores do encontro:</h5> <input type="number" name="xpTotalNvlEncounter"
+                id="idXpTotalNvlEncounter">
+            <h5>Total de jogadores participantes do encontro:</h5> <input type="number" name="jogadoresNvlEncounter"
+                id="idJogadoresNvlEncounter">
+            <h5>Média do nível dos personagens dos jogadores participantes do encontro:</h5> <input type="number"
+                name="nvlTotalEncounter" id="idNvlTotalEncounter">
+            <br />
+            <br />
+            <input type="button" value="Validar" onclick="dificultEncounter()">
+            <br />
+            <br />
+            <h5>Dificuldade: <div id="totalEncounter"></div>
+            </h5>
         </div>
     </div>
-    <div id="img">
-
-    </div>
     <!-- Script Section-->
-    <script src="assets/js/spellsImg.js"></script>
+    <script src="assets/js/xpCalculator.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.js"></script>
