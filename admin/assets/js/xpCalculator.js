@@ -116,9 +116,9 @@ function dificultEncounter() {
     if (json.xp.value.trim() == '') {
         alert('Favor preencher o campo "XP total com multiplicadores do encontro"')
     } else if (json.NVL.value.trim() == '') {
-        alert('Favor preencher o campo "Total de jogadores participantes do encontro"')
-    } else if (json.QTDPLAYER.value.trim() == '') {
         alert('Favor preencher o campo "Média do nível dos personagens dos jogadores participantes do encontro"')
+    } else if (json.QTDPLAYER.value.trim() == '') {
+        alert('Favor preencher o campo "Total de jogadores participantes do encontro"')
     } else {
 
         let XP = parseInt(json.xp.value);
