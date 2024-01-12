@@ -1,0 +1,28 @@
+<div>
+  @if (currentNpc.id) {
+  <div>
+    <h4>NPC</h4>
+    <div>
+      <label><strong>Nome:</strong></label> {{ currentNpc.nome }}
+    </div>
+    <div>
+      <label><strong>Idade:</strong></label> {{ currentNpc.idade }} Anos
+    </div>
+    <div>
+      <label><strong>Raça:</strong></label> {{ currentNpc.raca }}
+    </div>
+    <div>
+      <label><strong>Classe:</strong></label> {{ currentNpc.classe }}
+    </div>
+    <a router-link="alterar">
+      <button type="submit" class="badge badge-warning mb-2">Update</button>
+    </a>
+    <app-alterar [viewMode]="false" [currentNpc]="currentNpc"></app-alterar>
+  </div>
+  } @if (!currentNpc) {
+  <div>
+    <br />
+    <p>Please click on a Tutorial...</p>
+  </div>
+  }
+</div>
