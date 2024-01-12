@@ -40,7 +40,6 @@ export class AlterarComponent {
     this.service.get(id).subscribe({
       next: (data) => {
         this.currentNpc = data;
-        console.log(data);
       },
       error: (e) => console.error(e)
     });
@@ -48,6 +47,7 @@ export class AlterarComponent {
 
   updateNpc(): void {
     const data = {
+      id: this.currentNpc.id,
       nome: this.currentNpc.nome,
       idade: this.currentNpc.idade,
       raca: this.currentNpc.raca,
@@ -56,7 +56,7 @@ export class AlterarComponent {
 
     this.message = '';
 
-    this.service.update(data).subscribe({
+    this.service.update(this.currentNpc.id, data).subscribe({
       next: (res) => {
         console.log(res);
         this.message = res.message

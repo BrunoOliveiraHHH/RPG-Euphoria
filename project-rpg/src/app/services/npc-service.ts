@@ -21,8 +21,8 @@ export class NpcService {
     return this.http.post(baseUrl, data);
   }
 
-  update(data: any): Observable<any> {
-    return this.http.put(`${baseUrl}/alterar/`, data);
+  update(id: any, data: any): Observable<any> {
+    return this.http.put(`${baseUrl}/alterar/${id}`, data);
   }
 
   delete(id: any): Observable<any> {

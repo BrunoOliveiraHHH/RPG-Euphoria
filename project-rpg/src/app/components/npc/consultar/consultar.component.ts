@@ -44,7 +44,6 @@ export class ConsultarComponent {
     this.currentIndex = index;
     this.service.get(this.currentNpc.id).subscribe({next: (data) => {
       this.currentNpc = data;
-      console.log(data);
     }});
   }
 
@@ -55,7 +54,6 @@ export class ConsultarComponent {
     this.service.findByName(this.name).subscribe({
       next: (data) => {
         this.npcList = data;
-        console.log(data);
       },
       error: (e) => console.error(e)
     });
