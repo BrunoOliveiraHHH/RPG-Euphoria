@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { NpcDto } from '../models/npc-dto.model';
 
-const baseUrl = 'http://localhost:8080/npc';
+const baseUrl = 'http://localhost:8082/npc';
 
 @Injectable({ providedIn: 'root' })
 export class NpcService {
